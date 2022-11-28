@@ -5,7 +5,10 @@ files:
   - source: /
     destination: /var/www/html/drupaltest
 hooks:
- 
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: root
   AfterInstall:
     - location: scripts/install_composer_dependencies.sh
       timeout: 300
