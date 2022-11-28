@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R 777 /var/www/html/sample-preceptor
+chmod -R 777 /var/www/html
